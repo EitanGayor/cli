@@ -8,7 +8,7 @@ RUN apk add --no-cache make git curl && \
 	mkdir -p output/bin && \
 	make V=1 bin/step
 
-FROM alpine
+FROM alpine:3.20.3
 
 ENV STEP="/home/step"
 ENV STEPPATH="/home/step"
